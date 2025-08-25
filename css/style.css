@@ -1,8 +1,14 @@
+#article-background{
+    background-color: #F6F6F6;
+}
+
+
 .header{
     background-image: url(../assets/images/header-disc.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 .header .article-header{
@@ -23,7 +29,7 @@
 .article-header p{
     padding: 24px 0;
     color: #ffff;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .article-header .buttons{
@@ -35,7 +41,7 @@
 
 .buttons .button-download{
     color: #000;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 16px;
     border: none;
     border-radius: 50px;
@@ -43,10 +49,39 @@
 
 .buttons .button-navegador{
     color: #ffff;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background-color: #23272A;
     padding: 16px;
     border: none;
     border-radius: 50px;
+}
+
+.conteiner{
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo .article-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 16px;
+}
+
+.article-info h1{
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+.article-info p{
+    margin: 16px 0;
+}
+
+.article-info .img-article{
+    display: flex;
+    justify-content: center;
+}
+
+.article-info .img-article img{
+    width: 100%;
 }
 
