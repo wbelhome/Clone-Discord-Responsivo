@@ -2,13 +2,23 @@
     background-color: #F6F6F6;
 }
 
+#uppercase{
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-family: "Luckiest Guy";
+}
+
+#conteudo-desktop{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 .header{
     background-image: url(../assets/images/header-disc.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
 }
 
 .header .article-header{
@@ -17,19 +27,15 @@
     padding: 32px 16px;
 }
 
-.article-header h1{
-    font-size: 2rem;
-    width: 200px;
-    color: #ffff;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-family: "Luckiest Guy";
-}
-
 .article-header p{
     padding: 24px 0;
     color: #ffff;
     font-size: 1rem;
+}
+
+.article-header #uppercase{
+    color: #ffff;
+    width: 200px;
 }
 
 .article-header .buttons{
@@ -68,10 +74,20 @@
     margin: 32px 16px;
 }
 
-.article-info h1{
-    font-size: 1.5rem;
+.article-info .info-conteudo h1{
+    font-size: 2rem;
+    font-weight: 900;
     margin: 16px 0;
 }
+
+.article-info .info-conteudo1 h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 16px 0;
+}
+
+
+
 .article-info p{
     margin: 16px 0;
 }
@@ -85,3 +101,106 @@
     width: 100%;
 }
 
+.footer{
+    display: flex;
+    background-color:#23272A;
+    justify-content: center;
+}
+
+.footer img{
+    padding: 16px;
+}
+
+@media screen and (min-width: 534px){
+    #reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    }
+
+    .header .article-header{
+        padding: 32px;
+        display: flex;
+        align-items: center;
+    }
+
+    .article-header p{
+        width: 60%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    .article-header #uppercase{
+        text-align: center;
+    }
+
+    .article-header .buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-header .buttons button{
+        font-size: 0.6rem;
+        padding: 10px;
+    }
+
+    .conteiner .conteudo .article-info{
+        display: flex;
+        flex-direction: row;
+        margin: 16px 96px;
+    }
+
+    .article-info .img-article img{
+        padding: 0 32px;
+        object-fit: contain;
+    }
+
+    .article-info .info-conteudo{
+        align-items: center;
+        width: 40%; 
+    } 
+    
+    .article-info .info-conteudo h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .article-info .info-conteudo p{
+        font-size: 0.7rem;
+    }
+
+    .article-info .info-conteudo1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%; 
+
+    } 
+
+    .info-conteudo1 h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    
+    .info-conteudo1 p{
+        font-size: 0.7rem;
+    }
+
+
+
+    #last-container{
+        text-align: center;
+    }
+
+    .article-info .last-container{
+        text-align: center;
+    }
+    
+    .article-info .last-container h1{
+        justify-self: center;
+        width: 500px;
+    }
+
+    #conteudo-desktop .img-article{
+        height: 300px;
+    }
+}
